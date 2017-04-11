@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This is a admin layout created with [Angular](https://angular.io/) and [Angular Material](https://material.angular.io/)
 
-[Screenshot](screenshot.png)
+![Screenshot](screenshot.png)
 
 ## Development server
 
