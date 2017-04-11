@@ -1,0 +1,14 @@
+<button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon class="material-icons mdl-badge" data-badge="4">notifications</md-icon>
+</button>
+<md-menu #menu="mdMenu" [overlapTrigger]="false">
+  <md-list>
+    <md-list-item *ngFor="let notification of notifications">
+      <img md-list-avatar [src]="notification.owner.avatar_url">
+      <h3 md-line> {{notification.name}} </h3>
+      <p md-line>
+        <span> {{notification.owner.login}} </span>
+      </p>
+    </md-list-item>
+  </md-list>
+</md-menu>

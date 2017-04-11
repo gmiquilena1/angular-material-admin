@@ -1,0 +1,25 @@
+md-list{
+    max-height: 250px;
+}
+
+.material-icons.icon,
+.material-label {
+  font-size: 3em;
+  line-height: 1;
+  display: block;
+  color: #424242;
+  margin: .5em 0
+}
+
+
+.material-icons.mdl-badge[data-badge]::after,
+.material-label.mdl-badge[data-badge]::after{
+  font-size: .3em;
+  width: 2em;
+  height: 2em;
+}
+
+.material-icons.mdl-badge[data-badge]::after {
+  top: -1em;
+  right: -1em;
+}

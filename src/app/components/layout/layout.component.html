@@ -1,0 +1,41 @@
+<md-sidenav-container fullscreen>
+  <md-toolbar #toolbar color="primary">
+
+    <button md-icon-button (click)="sidenavLeft.toggle()">
+      <md-icon>menu</md-icon>
+    </button>
+
+    <span>Angular Material Admin</span>
+
+    <span class="fill-remaining-space"></span>
+
+    <app-notifications></app-notifications>
+
+    <button md-icon-button (click)="sidenavRight.toggle()">
+      <md-icon>settings</md-icon>
+    </button>
+
+  </md-toolbar>
+
+  <md-sidenav-container fullscreen>
+
+    <md-sidenav #sidenavLeft mode="side" opened="true" [style.margin-top]="marginTop">
+      <span>MENU PRINCIPAL</span>
+      <app-menu></app-menu>
+    </md-sidenav>
+
+    <md-sidenav #sidenavRight mode="side" align="end" [style.margin-top]="marginTop">
+      <span>CONFIGURACION</span>
+    </md-sidenav>
+
+    <div class="container" [style.margin-top]="marginTop">
+      
+    </div>
+
+  </md-sidenav-container>
+
+</md-sidenav-container>
+
+<span class="fab">
+  <button md-fab (click)="openSnackBar()"><md-icon>check circle</md-icon></button>
+</span>

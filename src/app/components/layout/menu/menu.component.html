@@ -1,0 +1,7 @@
+<!--Menu Items-->
+<md-nav-list>
+  <md-list-item *ngFor="let item of itemsMenu">
+    <md-icon [style.color]="item.color_icon" md-list-icon svgIcon>{{item.icon}}</md-icon>
+    <a md-line [href]="item.link">{{item.title}}</a>
+  </md-list-item>
+</md-nav-list>
