@@ -14,7 +14,7 @@ md-sidenav {
 }
 
 .container { 
-  /*min-height: 650px !important;*/
+  padding: 5px;  
 }
 
 md-toolbar {

@@ -8,6 +8,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CustomMaterialModule} from './custom-material.module'
 import 'hammerjs';
 
+//https://swimlane.gitbooks.io/ngx-datatable/content/
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { MenuComponent } from './components/layout/menu/menu.component';
@@ -25,7 +28,8 @@ import { NotificationsComponent } from './components/layout/notifications/notifi
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    CustomMaterialModule
+    CustomMaterialModule,
+    NgxDatatableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

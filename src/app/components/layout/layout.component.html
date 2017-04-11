@@ -29,7 +29,15 @@
     </md-sidenav>
 
     <div class="container" [style.margin-top]="marginTop">
-      
+      <ngx-datatable
+        class='material'
+        [columnMode]="'force'"
+        [headerHeight]="50"
+        [footerHeight]="50"
+        [selectionType]="'single'"
+        [rows]="rows"
+        [columns]="columns">
+      </ngx-datatable>
     </div>
 
   </md-sidenav-container>

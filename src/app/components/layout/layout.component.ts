@@ -11,6 +11,17 @@ export class LayoutComponent implements OnInit {
   @ViewChild('toolbar') toolbar;
   marginTop: string = "48px";
 
+  rows = [
+    { name: 'Austin', gender: 'Male', company: 'Swimlane' },
+    { name: 'Dany', gender: 'Male', company: 'KFC' },
+    { name: 'Molly', gender: 'Female', company: 'Burger King' },
+  ];
+  columns = [
+    { prop: 'name' },
+    { name: 'Gender' },
+    { name: 'Company' }
+  ];
+
   constructor(private snackBar: MdSnackBar) {    
     window.onresize = () => {       
        this.getMarginTopSidenav();              
