@@ -3,8 +3,11 @@
         [columnMode]="'force'"
         [headerHeight]="50"
         [footerHeight]="50"
+        [loadingIndicator]="loadingIndicator"
         [selectionType]="'single'"
         [limit]="10"
         [rows]="rows"
-        [columns]="columns">
+        [columns]="columns"
+        [selected]="selected"
+        (select)='onSelect($event)'>
       </ngx-datatable>

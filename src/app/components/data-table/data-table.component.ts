@@ -10,13 +10,19 @@ export class DataTableComponent implements OnInit {
 
   rows: any[];
   columns: any[];
+  selected = [];
+  loadingIndicator: boolean = true;
 
   constructor(private _http:Http) { }
 
   ngOnInit() {
 
     this._http.get('http://api.tvmaze.com/shows')
-    .subscribe((data) => this.rows = data.json());
+    .map((response)=> response.json())
+    .subscribe((data) => {
+      this.rows = data;
+      this.loadingIndicator = false;
+    });
 
     
     this.columns = [
@@ -25,6 +31,10 @@ export class DataTableComponent implements OnInit {
       { prop: 'status' },
       { prop: 'runtime' }
     ];
+  }
+
+  onSelect({selected}){
+    console.log(selected);
   }
 
 }
